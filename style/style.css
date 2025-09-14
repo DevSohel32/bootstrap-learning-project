@@ -2,9 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: 0;
-    font-family: "Inter", sans-serif;
+    /* font-family: "Inter", sans-serif; */
 }
-
+body{font-family: "Inter", sans-serif;}
+@font-face {
+    font-family: 'winner';
+    src: url('../font/Winner.ttf');
+}
 .whatsppbtn {
     border: 1px solid #27ae60;
     color: #27ae60;
@@ -30,4 +34,69 @@
     color: white;
 }
 
+.bannerContent h1 {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 70px;
+}
 
+.bannerContent span {
+    color: #2699fb;
+}
+
+.bannerContent ul {
+    list-style: none;
+}
+
+.bannerContent ul li {
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.bannerContent ul li::before {
+    content: "\f058";
+    position: absolute;
+    color: #2699fb;
+    left: -25px;
+    font-family: "Font Awesome 5 Free";
+}
+.banner-w-lg{
+    height: 500px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+ .sohel {
+    font-family: 'winner';
+    bottom: -28px;
+    right: -93px;
+    width: 190px;
+    height: 109px;
+    background-color: rgb(245, 236, 236);
+    border-radius: 16px;
+    border: 3px solid #ff0000;
+    box-shadow: 10px 10px 0px 3px rgba(0, 0, 0, 0.8), -5px -5px 0px 0px rgba(255, 255, 0, 0.7);
+    cursor: pointer; 
+    transition: all 0.35s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.sohel:hover {
+    box-shadow: 15px 15px 0px 5px rgba(0, 0, 0, 1), -8px -8px 0px 0px rgba(0, 255, 255, 0.9); 
+    border-color: #0000ff; 
+    background-color: rgb(230, 220, 220); 
+}
+.sohel h3 {
+
+    color: #222; 
+    
+    text-shadow: 3px 3px 0px rgba(255, 0, 0, 0.6), 6px 6px 0px rgba(0, 0, 255, 0.4);
+    margin: 0; 
+    padding: 5px; 
+    line-height: 1.2;
+}
+.counterSection h2{
+    font-size: 30px;
+    font-weight: 700;
+    color: #2699fb;
+
+}
