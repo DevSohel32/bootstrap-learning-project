@@ -1,0 +1,43 @@
+@media only screen and (min-width: 200px) and (max-width: 576px) {
+    .w-40 {
+        width: 70%;
+    }
+
+    .btn-outer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        justify-content: center !important;
+    }
+    .whatsppbtn,.call{
+        padding: 7px 15px;
+        font-size: 14;
+    }
+}
+
+/* @media only screen and (min-width: 577px) and (max-width: 768px) {
+    .w-md-40 {
+        width: 70%;
+    }
+      .btn-outer {
+        position: fixed;
+        bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .w-lg-40 {
+        width: 30%;
+    }
+} */
+
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1170px;
+    }
+     .w-xl-40 {
+        width: 40%;
+    }
+}
+
