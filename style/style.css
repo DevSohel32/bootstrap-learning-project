@@ -89,16 +89,23 @@ body{font-family: "Inter", sans-serif;}
     color: #2699fb;
 }
 
-.bannerContent ul {
+.bannerContent, .lis, ul {
     list-style: none;
 }
 
-.bannerContent ul li {
+.bannerContent, .lis, ul li {
     position: relative;
     margin-bottom: 16px;
 }
 
 .bannerContent ul li::before {
+    content: "\f058";
+    position: absolute;
+    color: #2699fb;
+    left: -25px;
+    font-family: "Font Awesome 5 Free";
+}
+.lis  li::before {
     content: "\f058";
     position: absolute;
     color: #2699fb;
