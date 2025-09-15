@@ -4,171 +4,308 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="style/bootstrap.min.css">
+    
+    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <!-- Your custom CSS -->
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/media.css">
+    
     <title>EduBootstrap</title>
 </head>
 
 <body>
-    <header class="container-fluid bg-white py-2 shadow-lg position-sticky top-0 z-1">
-        <!-- nav section start -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
-                    aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+
+    <!-- ==================== HEADER / NAVBAR ==================== -->
+    <header class="container-fluid bg-white py-2 shadow-sm position-sticky top-0 z-3">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container d-flex align-items-center">
+
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center me-3" href="#">
+                    <img src="asset/logo.png" alt="School Logo" style="height:48px; width:auto;">
+                </a>
+
+                <!-- Mobile menu toggle button -->
+                <button class="btn d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+                    aria-controls="mobileMenu" aria-label="Open menu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <figure class="mt-sm-2 mb-0 pb-0 d-flex justify-content-sm-end">
-                        <a href="#"> <img src="asset/logo.png" class="w-xl-40 w-lg-40 w-md-40 w-40"></a>
-                    </figure>
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link">Contact</a>
-                        </li>
+
+                <!-- Desktop Navbar -->
+                <div class="collapse navbar-collapse d-none d-lg-flex" id="desktopNav">
+                    <ul class="navbar-nav w-100 d-flex justify-content-around align-items-center mb-0">
+                        <li class="nav-item"><a class="nav-link active fw-semibold" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link fw-semibold" href="#">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link fw-semibold" href="#">Admissions</a></li>
+                        <li class="nav-item"><a class="nav-link fw-semibold" href="#">Academics</a></li>
+                        <li class="nav-item"><a class="nav-link fw-semibold" href="#">Events</a></li>
+                        <li class="nav-item"><a class="nav-link fw-semibold" href="#">Contact</a></li>
+
+                        <!-- Login / Sign Up Buttons -->
+                        <div class="d-flex align-items-center ms-3">
+                            <a href="#" class="btn btn-outline-primary me-2">Login</a>
+                            <a href="#" class="btn btn-primary">Sign Up</a>
+                        </div>
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
                 </div>
+
             </div>
         </nav>
 
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="offcanvasRightLabel">
+        <!-- Mobile Offcanvas Menu -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
             <div class="offcanvas-header">
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <h5 id="mobileMenuLabel" class="offcanvas-title">Menu</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-                <figure class="mb-0 pb-0">
-                    <a href="#"> <img src="asset/logo.png" class="w-xl-40 w-lg-40 w-md-40 w-40"></a>
-                </figure>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link">Contact</a>
-                    </li>
+                <ul class="navbar-nav mb-3">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Admissions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Academics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+
+                <div class="d-flex gap-2">
+                    <a href="#" class="btn btn-outline-primary flex-fill" data-bs-toggle="modal"
+                        data-bs-target="#loginModal">Login</a>
+                    <a href="#" class="btn btn-primary flex-fill">Sign Up</a>
+                </div>
             </div>
         </div>
     </header>
+    <!-- ==================== HEADER END ==================== -->
+
     <main>
-        <!-- Login modal start -->
-        <div class="modal fade" id="loginModal">
+
+        <!-- ==================== LOGIN MODAL ==================== -->
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
+
                     <div class="modal-header">
-                        <h1 class="modal-title fs-8" id="exampleModalLabel">Login Now</h1>
+                        <h1 class="modal-title fs-6" id="exampleModalLabel">Login Now</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
+
                     <div class="modal-body">
-                        <form action="" class="LoginForm">
+                        <form action="" class="LoginForm" novalidate>
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp">
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                    required>
+                                <div id="emailHelp" class="form-help">We'll never share your email with anyone else.</div>
                             </div>
+
                             <div class="mb-3">
                                 <label for="exampleInputPassword1" class="form-label">Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1">
+                                <input type="password" class="form-control" id="exampleInputPassword1" required>
                             </div>
+
                             <div class="mb-3 form-check">
                                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                 <label class="form-check-label" for="exampleCheck1">Check me out</label>
                             </div>
                         </form>
                     </div>
+
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                         <button type="button" class="btn btn-primary">Sign In</button>
                     </div>
+
                 </div>
             </div>
         </div>
-        <!-- Login modal end -->
+        <!-- ==================== LOGIN MODAL END ==================== -->
 
-        <!-- banner section start -->
-        <section class="container-fluid py-lg-5 py-sm-4 py-3 ">
-            <div class="container">
-                <div class="row gap-3 justify-content-between align-items-center">
-                    <div class="col-lg-6">
-                        <div class="bannerContent">
-                            <h1>A Legacy of <span>Knowledge & Growth</span></h1>
-                            <p>Providing quality education and a strong foundation for generations of students,
-                                Baratipur Model High School is committed to fostering academic excellence, ethical
-                                values, and holistic development. Our dedicated faculty, modern facilities, and
-                                student-centered approach ensure that every learner thrives both inside and outside the
-                                classroom. From rigorous academics to extracurricular opportunities, we prepare our
-                                students to meet the challenges of tomorrow with confidence and integrity.</p>
-                            <ul>
-                                <li>Excellence in academics and skill development</li>
-                                <li>Experienced and passionate teaching staff</li>
-                                <li>Vibrant extracurricular programs and clubs</li>
-                                <li>Safe, supportive, and inclusive learning environment</li>
-                                <li>Preparing students for higher education and future success</li>
-                            </ul>
-                            <button class="btn  btn-outline-info" data-bs-toggle="modal"
-                                data-bs-target="#loginModal">Learn More About Us</button>
+        <!-- ==================== BANNER CAROUSEL ==================== -->
+        <section class="container-fluid py-lg-5 py-sm-4 py-3">
+            <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-inner">
+
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <div class="row gap-3 justify-content-between align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="bannerContent">
+                                        <h1>A Legacy of <span>Knowledge & Growth</span></h1>
+                                        <p>Providing quality education and a strong foundation...</p>
+                                        <ul>
+                                            <li>Excellence in academics and skill development</li>
+                                            <li>Experienced and passionate teaching staff</li>
+                                            <li>Vibrant extracurricular programs and clubs</li>
+                                            <li>Safe, supportive, and inclusive learning environment</li>
+                                            <li>Preparing students for higher education and future success</li>
+                                        </ul>
+                                        <button class="btn btn-outline-info" data-bs-toggle="modal"
+                                            data-bs-target="#loginModal">Learn More About Us</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 container position-relative">
+                                    <figure>
+                                        <img src="asset/banner.png" class="banner-w-lg d-block w-100">
+                                    </figure>
+                                    <div class="sohel d-flex justify-content-center align-items-center position-absolute shadow-lg">
+                                        <h3>sujadddoula sohel</h3>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-5 container position-relative">
-                        <figure>
-                            <img src="asset/banner.png" class="banner-w-lg">
-                        </figure>
-                        <div class="sohel d-flex justify-content-center align-items-center position-absolute shadow-lg">
-                            <h3>sujadddoula sohel</h3>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row gap-3 justify-content-between align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="bannerContent">
+                                        <h1>Inspiring <span>Future Leaders</span></h1>
+                                        <p>We believe education goes beyond textbooks...</p>
+                                        <ul>
+                                            <li>Holistic student development</li>
+                                            <li>Modern technology-integrated classrooms</li>
+                                            <li>Leadership & teamwork opportunities</li>
+                                        </ul>
+                                        <button class="btn btn-outline-info" data-bs-toggle="modal"
+                                            data-bs-target="#loginModal">Discover More</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 container position-relative">
+                                    <figure>
+                                        <img src="asset/banner2.png" class="banner-w-lg d-block w-100">
+                                    </figure>
+                                    <div class="sohel d-flex justify-content-center align-items-center position-absolute shadow-lg">
+                                        <h3>Baratipur Model High School</h3>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row gap-3 justify-content-between align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="bannerContent">
+                                        <h1>Empowering <span>Innovation</span></h1>
+                                        <p>We nurture creativity and problem-solving skills...</p>
+                                        <ul>
+                                            <li>STEM-focused programs</li>
+                                            <li>Hands-on learning opportunities</li>
+                                            <li>Encouraging innovative ideas</li>
+                                        </ul>
+                                        <button class="btn btn-outline-info" data-bs-toggle="modal"
+                                            data-bs-target="#loginModal">Explore More</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 container position-relative">
+                                    <figure>
+                                        <img src="asset/banner3.png" class="banner-w-lg d-block w-100">
+                                    </figure>
+                                    <div class="sohel d-flex justify-content-center align-items-center position-absolute shadow-lg">
+                                        <h3>Innovation Hub</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row gap-3 justify-content-between align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="bannerContent">
+                                        <h1>Nurturing <span>Excellence</span></h1>
+                                        <p>Commitment to academic brilliance and moral values...</p>
+                                        <ul>
+                                            <li>Strong academic performance</li>
+                                            <li>Supportive learning environment</li>
+                                            <li>Focus on character building</li>
+                                        </ul>
+                                        <button class="btn btn-outline-info" data-bs-toggle="modal"
+                                            data-bs-target="#loginModal">Join Us Today</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 container position-relative">
+                                    <figure>
+                                        <img src="asset/banner4.png" class="banner-w-lg d-block w-100">
+                                    </figure>
+                                    <div class="sohel d-flex justify-content-center align-items-center position-absolute shadow-lg">
+                                        <h3>Academic Excellence</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-            </div>
-            <!-- counterSection section start -->
-            <div class="container shadow-lg mt-5 counterSection">
-                <div class="row row-cols-lg-5 row-cols-md-3 row-cols-2 p-4 text-center">
-                    <div class="col">
-                        <h2>1200+</h2>
-                        <p>Active Learners</p>
-                    </div>
-                    <div class="col">
-                        <h2>60+</h2>
-                        <p>Experienced Faculty</p>
-                    </div>
-                    <div class="col">
-                        <h2>15+</h2>
-                        <p>Modern Classrooms</p>
-                    </div>
-                    <div class="col">
-                        <h2>30+</h2>
-                        <p>Sports & Cultural Events</p>
-                    </div>
-                    <div class="col">
-                        <h2>95%</h2>
-                        <p>Exam Success Rate</p>
-                    </div>
+
+                <!-- Carousel Controls -->
+                <div class="d-flex justify-content-end position-absolute bottom-0 end-0 p-3">
+                    <button class="carousel-control-prev position-static me-2" type="button" data-bs-target="#bannerCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next position-static" type="button" data-bs-target="#bannerCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
                 </div>
+
+                <!-- Carousel Indicators -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="3"></button>
+                </div>
+
             </div>
-            <!-- counterSection section start -->
         </section>
-        <!-- banner section end -->
+        <!-- ==================== BANNER CAROUSEL END ==================== -->
 
-        <!-- Highlights section start  -->
+        <!-- ==================== COUNTER SECTION ==================== -->
+        <div class="container shadow-lg mt-5 counterSection">
+            <div class="row row-cols-lg-5 row-cols-md-3 row-cols-2 p-4 text-center">
+                <div class="col">
+                    <h2>1200+</h2>
+                    <p>Active Learners</p>
+                </div>
+                <div class="col">
+                    <h2>60+</h2>
+                    <p>Experienced Faculty</p>
+                </div>
+                <div class="col">
+                    <h2>15+</h2>
+                    <p>Modern Classrooms</p>
+                </div>
+                <div class="col">
+                    <h2>30+</h2>
+                    <p>Sports & Cultural Events</p>
+                </div>
+                <div class="col">
+                    <h2>95%</h2>
+                    <p>Exam Success Rate</p>
+                </div>
+            </div>
+        </div>
+        <!-- ==================== COUNTER SECTION END ==================== -->
+
+        <!-- ==================== HIGHLIGHTS SECTION ==================== -->
+
         <div class="highlights-section container-fluid py-5 bg-light">
             <div class="container">
                 <div class="row mb-4">
@@ -281,10 +418,11 @@
                 </div>
             </div>
         </div>
-        <!-- Highlights section end -->
-
-
-        <section class="container-fluid py-5">
+       
+<!-- ==================== HIGHLIGHTS SECTION END ==================== -->
+       
+<!-- ==================== CURRICULUM SECTION ==================== -->
+   <section class="container-fluid py-5">
             <div class="container">
                 <div class="row justify-content-center mb-4">
                     <div class="col-lg-8 text-center">
@@ -323,8 +461,7 @@
                                         </ul>
                                     </div>
                                     <div class="col-lg-6">
-                                        <img src="assets/primary.jpg" alt="Primary curriculum"
-                                            class="img-fluid rounded">
+                                        <img src="asset/c1.png" alt="Primary curriculum" class="img-fluid curriculum-img">
                                     </div>
                                 </div>
                             </div>
@@ -342,8 +479,7 @@
                                         </ul>
                                     </div>
                                     <div class="col-lg-6">
-                                        <img src="assets/secondary.jpg" alt="Secondary curriculum"
-                                            class="img-fluid rounded">
+                                        <img src="asset/c2.png" alt="Secondary curriculum" class="img-fluid curriculum-img">
                                     </div>
                                 </div>
                             </div>
@@ -361,8 +497,7 @@
                                         </ul>
                                     </div>
                                     <div class="col-lg-6">
-                                        <img src="assets/higher-secondary.jpg" alt="Higher Secondary curriculum"
-                                            class="img-fluid rounded">
+                                        <img src="asset/c3.png" alt="Secondary curriculum" class="img-fluid curriculum-img">
                                     </div>
                                 </div>
                             </div>
@@ -380,8 +515,7 @@
                                         </ul>
                                     </div>
                                     <div class="col-lg-6">
-                                        <img src="assets/co-curricular.jpg" alt="Co-curricular activities"
-                                            class="img-fluid rounded">
+                                        <img src="asset/c4.png" alt="Secondary curriculum" class="img-fluid curriculum-img">
                                     </div>
                                 </div>
                             </div>
@@ -390,9 +524,11 @@
                 </div>
             </div>
         </section>
+<!-- ==================== CURRICULUM SECTION END ==================== -->
 
-
-        <!-- Faq section start -->
+      
+        
+<!-- ==================== FAQ SECTION ==================== -->
         <section class="container-fluid py-5 bg-secondary-subtle">
             <div class="container">
                 <div class="row justify-content-center">
@@ -523,8 +659,7 @@
                 </div>
             </div>
         </section>
-        <!-- Faq section end -->
-
+       <!-- ==================== FAQ SECTION END ==================== -->
     </main>
     <footer></footer>
 
