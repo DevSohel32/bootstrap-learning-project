@@ -48,6 +48,11 @@
         letter-spacing: 1.5px; 
         text-shadow: 2px 2px 0px rgba(255, 0, 0, 0.5); 
     }
+    .highlights-section h2{
+    background-color: #0a2134;
+    font-size: 25px;
+    font-weight: 700;
+}
 }
 
 /* @media only screen and (min-width: 577px) and (max-width: 768px) {
