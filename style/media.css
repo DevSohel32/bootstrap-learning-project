@@ -1,6 +1,6 @@
 @media only screen and (min-width: 200px) and (max-width: 576px) {
     .w-40 {
-        width: 70%;
+        width: 60%;
     }
 
     .btn-outer {
@@ -83,7 +83,7 @@
     }
 
     .w-xl-40 {
-        width: 40%;
+        width: 20%;
     }
     
 }
