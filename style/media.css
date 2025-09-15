@@ -1,7 +1,5 @@
 @media only screen and (min-width: 200px) and (max-width: 576px) {
-    .w-40 {
-        width: 60%;
-    }
+  
 
     .btn-outer {
         position: fixed;

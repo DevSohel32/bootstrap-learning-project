@@ -312,3 +312,7 @@ body {
     transform: scale(1.03);
     transition: 0.3s ease-in-out;
 }
+.card-subtitle {
+    text-transform: uppercase;
+    color: #0d6dfdcb; /* Bootstrap primary blue */
+}
