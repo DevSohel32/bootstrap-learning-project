@@ -392,25 +392,25 @@ ul li {
 .banner-bg {
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)),
-        url('../asset/banner.jpg');
+        url('asset/banner.jpg');
 }
 
 .banner-bg1 {
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)),
-        url('../asset/banner2.jpg');
+        url('asset/banner2.jpg');
 }
 
 .banner-bg2 {
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)),
-        url('../asset/banner3.jpg');
+        url('asset/banner3.jpg');
 }
 
 .banner-bg3 {
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)),
-        url('../asset/banner4.jpg');
+        url('asset/banner4.jpg');
 }
 
 /* Align carousel buttons center right */
