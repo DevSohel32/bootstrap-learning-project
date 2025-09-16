@@ -376,7 +376,8 @@ ul li {
 .banner-bg,
 .banner-bg1,
 .banner-bg2,
-.banner-bg3 {
+.banner-bg3,
+.banner-bg4 {
     height: 90vh;
     background-repeat: no-repeat;
     background-position: center center;
@@ -411,6 +412,11 @@ ul li {
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)),
         url('../asset/banner4.jpg');
+}
+.banner-bg4 {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)),
+        url('../asset/b-bg5.jpg');
 }
 
 /* Align carousel buttons center right */
