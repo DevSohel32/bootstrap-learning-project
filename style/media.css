@@ -53,23 +53,24 @@
 
     font-weight: 500;
 }
-}
+ .banner-bg,
+    .banner-bg1,
+    .banner-bg2,
+    .banner-bg3 {
+        height: 60vh; /* reduce height for smaller screens */
+        background-position: top center; /* better crop on mobile */
+    }
 
-/* @media only screen and (min-width: 577px) and (max-width: 768px) {
-    .w-md-40 {
-        width: 70%;
+    .carousel-caption {
+        font-size: 0.9rem;
+        padding: 0.5rem;
     }
-      .btn-outer {
-        position: fixed;
-        bottom: 0;
+
+    .carousel-caption h1, 
+    .carousel-caption h5 {
+        font-size: 1.2rem;
     }
 }
-
-@media only screen and (min-width: 769px) and (max-width: 992px) {
-    .w-lg-40 {
-        width: 30%;
-    }
-} */
 
 @media (min-width: 1400px) {
 

@@ -7,6 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
@@ -85,12 +86,98 @@
     <!-- ==================== HEADER END ==================== -->
 
     <main>
-        
+
+        <!-- ==================== BANNER CAROUSEL ==================== -->
+        <section class="container-fluid p-0 m-0">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item banner-bg active" data-bs-interval="10000">
+
+                        <div class="carousel-caption d-none d-md-block text-start" data-aos="fade-up"
+                            data-aos-duration="2000">
+                            <h1 class="text-white">Unity and Celebration</h1>
+                            <p class="text-white">Bringing students and educators together for a brighter future.</p>
+                        </div>
+
+                    </div>
+                    <div class="carousel-item banner-bg1" data-bs-interval="2000">
+                        <div class="carousel-caption d-none d-md-block text-start" data-aos="fade-up"
+                            data-aos-duration="2000">
+
+                            <h1 class="text-white">Welcome to Model School</h1>
+                            <p class="text-white">A place of inspiration, learning, and community.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item banner-bg2">
+                        <div class="carousel-caption d-none d-md-block text-start" data-aos="fade-up"
+                            data-aos-duration="2000">
+                            <h1 class="text-white">Cherishing Moments</h1>
+                            <p class="text-white">Celebrating milestones with pride and joy.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item banner-bg3">
+                        <div class="carousel-caption d-none d-md-block text-start" data-aos="fade-up"
+                            data-aos-duration="2000">
+                            <h1 class="text-white">Love for Model School</h1>
+                            <p class="text-white">Together we grow, learn, and succeed.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <!-- ==================== BANNER CAROUSEL END ==================== -->
+
+        <!-- ==================== COUNTER ==================== -->
+        <div class="container shadow-lg mt-5 counterSection" data-aos="fade-right" data-aos-duration="2000">
+            <div class="row row-cols-lg-5 row-cols-md-3 row-cols-2 p-4 text-center">
+                <div class="col">
+                    <h2>154</h2>
+                    <p>Dinajpur District School Rank</p>
+                </div>
+                <div class="col">
+                    <h2>655</h2>
+                    <p>Dinajpur Board School Rank</p>
+                </div>
+                <div class="col">
+                    <h2>840</h2>
+                    <p>Rangpur Division School Rank</p>
+                </div>
+                <div class="col">
+                    <h2>9006</h2>
+                    <p>National School Rank</p>
+                </div>
+                <div class="col">
+                    <h2>86.61%</h2>
+                    <p>Exam Success Rate</p>
+                </div>
+            </div>
+        </div>
+        <!-- ==================== COUNTER END ==================== -->
+
         <!-- ==================== LOGIN MODAL ==================== -->
         <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-
                     <div class="modal-header">
                         <h1 class="modal-title fs-6" id="exampleModalLabel">Login Now</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -128,8 +215,9 @@
         </div>
         <!-- ==================== LOGIN MODAL END ==================== -->
 
-        <!-- ==================== BANNER CAROUSEL ==================== -->
-        <section class="container-fluid py-lg-5 py-sm-4 py-3">
+
+        <!-- ==================== HERO CAROUSEL ==================== -->
+        <section class="container-fluid py-lg-5 py-sm-4 py-3" data-aos="fade-left" data-aos-duration="2000">
             <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
 
                 <div class="carousel-inner">
@@ -139,7 +227,7 @@
                         <div class="container">
                             <div class="row gap-3 justify-content-between align-items-center">
                                 <div class="col-lg-6">
-                                    <div class="bannerContent">
+                                    <div class="bannerContent" data-aos="fade-down-right" data-aos-duration="3000">
                                         <h1>A Legacy of <span>Knowledge & Growth</span></h1>
                                         <p>Providing quality education and a strong foundation...</p>
                                         <ul>
@@ -153,9 +241,10 @@
                                             data-bs-target="#loginModal">Learn More About Us</button>
                                     </div>
                                 </div>
-                                <div class="col-lg-5 container position-relative">
+                                <div class="col-lg-5 container position-relative" data-aos="fade-up-left"
+                                    data-aos-duration="3000">
                                     <figure>
-                                        <img src="asset/banner.png" class="banner-w-lg d-block w-100">
+                                        <img src="asset/hero.png" class="banner-w-lg d-block w-100">
                                     </figure>
                                     <div
                                         class="sohel d-flex justify-content-center align-items-center position-absolute shadow-lg">
@@ -171,7 +260,7 @@
                         <div class="container">
                             <div class="row gap-3 justify-content-between align-items-center">
                                 <div class="col-lg-6">
-                                    <div class="bannerContent">
+                                    <div class="bannerContent" data-aos="fade-down-right" data-aos-duration="3000">
                                         <h1>Inspiring <span>Future Leaders</span></h1>
                                         <p>We believe education goes beyond textbooks...</p>
                                         <ul>
@@ -183,9 +272,10 @@
                                             data-bs-target="#loginModal">Discover More</button>
                                     </div>
                                 </div>
-                                <div class="col-lg-5 container position-relative">
+                                <div class="col-lg-5 container position-relative" data-aos="fade-up-left"
+                                    data-aos-duration="3000">
                                     <figure>
-                                        <img src="asset/banner2.png" class="banner-w-lg d-block w-100">
+                                        <img src="asset/hero2.png" class="banner-w-lg d-block w-100">
                                     </figure>
                                     <div
                                         class="sohel d-flex justify-content-center align-items-center position-absolute shadow-lg">
@@ -201,7 +291,7 @@
                         <div class="container">
                             <div class="row gap-3 justify-content-between align-items-center">
                                 <div class="col-lg-6">
-                                    <div class="bannerContent">
+                                    <div class="bannerContent" data-aos="fade-down-right" data-aos-duration="3000">
                                         <h1>Empowering <span>Innovation</span></h1>
                                         <p>We nurture creativity and problem-solving skills...</p>
                                         <ul>
@@ -213,9 +303,10 @@
                                             data-bs-target="#loginModal">Explore More</button>
                                     </div>
                                 </div>
-                                <div class="col-lg-5 container position-relative">
+                                <div class="col-lg-5 container position-relative" data-aos="fade-up-left"
+                                    data-aos-duration="3000">
                                     <figure>
-                                        <img src="asset/banner3.png" class="banner-w-lg d-block w-100">
+                                        <img src="asset/hero3.png" class="banner-w-lg d-block w-100">
                                     </figure>
                                     <div
                                         class="sohel d-flex justify-content-center align-items-center position-absolute shadow-lg">
@@ -231,7 +322,7 @@
                         <div class="container">
                             <div class="row gap-3 justify-content-between align-items-center">
                                 <div class="col-lg-6">
-                                    <div class="bannerContent">
+                                    <div class="bannerContent" data-aos="fade-down-right" data-aos-duration="3000">
                                         <h1>Nurturing <span>Excellence</span></h1>
                                         <p>Commitment to academic brilliance and moral values...</p>
                                         <ul>
@@ -243,9 +334,10 @@
                                             data-bs-target="#loginModal">Join Us Today</button>
                                     </div>
                                 </div>
-                                <div class="col-lg-5 container position-relative">
+                                <div class="col-lg-5 container position-relative" data-aos="fade-up-left"
+                                    data-aos-duration="3000">
                                     <figure>
-                                        <img src="asset/banner4.png" class="banner-w-lg d-block w-100">
+                                        <img src="asset/hero4.png" class="banner-w-lg d-block w-100">
                                     </figure>
                                     <div
                                         class="sohel d-flex justify-content-center align-items-center position-absolute shadow-lg">
@@ -258,71 +350,27 @@
 
                 </div>
 
-                <!-- Carousel Controls -->
-                <div class="d-flex justify-content-end position-absolute bottom-0 end-0 p-3">
-                    <button class="carousel-control-prev position-static me-2" type="button"
-                        data-bs-target="#bannerCarousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </button>
-                    <button class="carousel-control-next position-static" type="button" data-bs-target="#bannerCarousel"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </button>
-                </div>
-
-                <!-- Carousel Indicators -->
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="0" class="active"></button>
-                    <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="1"></button>
-                    <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="2"></button>
-                    <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="3"></button>
-                </div>
 
             </div>
         </section>
-        <!-- ==================== BANNER CAROUSEL END ==================== -->
+        <!-- ==================== HERO CAROUSEL END ==================== -->
 
-        <!-- ==================== COUNTER SECTION ==================== -->
-        <div class="container shadow-lg mt-5 counterSection">
-            <div class="row row-cols-lg-5 row-cols-md-3 row-cols-2 p-4 text-center">
-                <div class="col">
-                    <h2>154</h2>
-                    <p>Dinajpur District School Rank</p>
-                </div>
-                <div class="col">
-                    <h2>655</h2>
-                    <p>Dinajpur Board School Rank</p>
-                </div>
-                <div class="col">
-                    <h2>840</h2>
-                    <p>Rangpur Division School Rank</p>
-                </div>
-                <div class="col">
-                    <h2>9006</h2>
-                    <p>National School Rank</p>
-                </div>
-                <div class="col">
-                    <h2>86.61%</h2>
-                    <p>Exam Success Rate</p>
-                </div>
-            </div>
-        </div>
-        <!-- ==================== COUNTER SECTION END ==================== -->
 
-        <!-- ==================== HIGHLIGHTS SECTION ==================== -->
 
+        <!-- ==================== HIGHLIGHTS ==================== -->
         <div class="highlights-section container-fluid py-5 bg-light">
             <div class="container">
                 <div class="row mb-4">
                     <div class="col-12">
-                        <h2 class="fw-bold">Why Choose Baratipur Model High School?</h2>
+                        <h2 class="fw-bold" data-aos="fade-right" data-aos-duration="1500">Why Choose Baratipur Model
+                            High School?</h2>
                         <p class="text-muted">We are committed to providing quality education, modern
                             facilities, and a supportive environment for every student.</p>
                     </div>
                 </div>
                 <div class="row g-4">
                     <!-- Card 1 -->
-                    <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="col-lg-4 col-sm-6 col-12" data-aos="fade-down-right" data-aos-duration="2000">
                         <div class="bg-white p-3 d-flex shadow-sm rounded align-items-center">
                             <div
                                 class="icon-box bg-primary rounded me-3 d-flex justify-content-center align-items-center">
@@ -338,7 +386,7 @@
                         </div>
                     </div>
                     <!-- Card 2 -->
-                    <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="col-lg-4 col-sm-6 col-12" data-aos="fade-up" data-aos-duration="2000">
                         <div class="bg-white p-3 d-flex shadow-sm rounded align-items-center">
                             <div
                                 class="icon-box bg-success rounded me-3 d-flex justify-content-center align-items-center">
@@ -356,7 +404,8 @@
 
                     <!-- Card 3 -->
                     <div class="col-lg-4 col-sm-6 col-12">
-                        <div class="bg-white p-3 d-flex shadow-sm rounded align-items-center">
+                        <div class="bg-white p-3 d-flex shadow-sm rounded align-items-center" data-aos="fade-up-left"
+                            data-aos-duration="2000">
                             <div
                                 class="icon-box bg-warning rounded me-3 d-flex justify-content-center align-items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 640 640">
@@ -372,7 +421,7 @@
                     </div>
 
                     <!-- Card 4 -->
-                    <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="col-lg-4 col-sm-6 col-12" data-aos="fade-down-right" data-aos-duration="2000">
                         <div class="bg-white p-3 d-flex shadow-sm rounded align-items-center">
                             <div
                                 class="icon-box bg-danger rounded me-3 d-flex justify-content-center align-items-center">
@@ -389,7 +438,7 @@
                     </div>
 
                     <!-- Card 5 -->
-                    <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="col-lg-4 col-sm-6 col-12" data-aos="fade-up" data-aos-duration="2000">
                         <div class="bg-white p-3 d-flex shadow-sm rounded align-items-center">
                             <div class="icon-box bg-info rounded me-3 d-flex justify-content-center align-items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 640 640">
@@ -405,7 +454,7 @@
                     </div>
 
                     <!-- Card 6 -->
-                    <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="col-lg-4 col-sm-6 col-12" data-aos="fade-up-left" data-aos-duration="2000">
                         <div class="bg-white p-3 d-flex shadow-sm rounded align-items-center">
                             <div
                                 class="icon-box bg-secondary rounded me-3 d-flex justify-content-center align-items-center">
@@ -423,7 +472,9 @@
                 </div>
             </div>
         </div>
-        <!-- ==================== HIGHLIGHTS SECTION END ==================== -->
+        <!-- ==================== HIGHLIGHTS END ==================== -->
+
+
         <!-- ==================== TEACHEARS SECTION ==================== -->
         <section id="teachers" class="py-5 bg-light">
             <div class="container">
@@ -433,7 +484,7 @@
                 </div>
                 <div class="row g-4">
                     <!-- Teacher Card Example -->
-                    <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="flip-left" data-aos-duration="3000">
                         <div class="card h-100 shadow-sm">
                             <div class="card-body text-right">
                                 <h5 class="card-title card-subtitle fw-semibold">Md. Ayub Ali Khandokhar</h5>
@@ -443,7 +494,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-duration="3000">
                         <div class="card h-100 shadow-sm">
                             <div class="card-body text-right">
                                 <h5 class="card-title card-subtitle fw-semibold">Mst. Zakia Akther Banu</h5>
@@ -453,7 +504,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="flip-left" data-aos-duration="3000">
                         <div class="card h-100 shadow-sm">
                             <div class="card-body text-right">
                                 <h5 class="card-title card-subtitle fw-semibold">Mohammad Mahbubur Rahman</h5>
@@ -463,7 +514,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-duration="3000">
                         <div class="card h-100 shadow-sm">
                             <div class="card-body text-right">
                                 <h5 class="card-title card-subtitle fw-semibold">Md. Enamul Bari Chowdhury</h5>
@@ -473,7 +524,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-duration="3000">
                         <div class="card h-100 shadow-sm">
                             <div class="card-body text-right">
                                 <h5 class="card-title card-subtitle fw-semibold">Mst. Fahima Khatun</h5>
@@ -484,7 +535,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="flip-left" data-aos-duration="3000">
                         <div class="card h-100 shadow-sm">
                             <div class="card-body text-right">
                                 <h5 class="card-title card-subtitle fw-semibold">Md. Delwar Hossen</h5>
@@ -494,7 +545,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-duration="3000">
                         <div class="card h-100 shadow-sm">
                             <div class="card-body text-right">
                                 <h5 class="card-title card-subtitle fw-semibold">Md. Shahidul Islam Mondal</h5>
@@ -505,7 +556,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="flip-left" data-aos-duration="3000">
                         <div class="card h-100 shadow-sm">
                             <div class="card-body text-right">
                                 <h5 class="card-title card-subtitle fw-semibold">Abul Hasnath Md Shelim Mia</h5>
@@ -516,7 +567,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="flip-left" data-aos-duration="3000">
                         <div class="card h-100 shadow-sm">
                             <div class="card-body text-right">
                                 <h5 class="card-title card-subtitle fw-semibold">Chandana Rani Chakravarty</h5>
@@ -527,7 +578,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-duration="3000">
                         <div class="card h-100 shadow-sm">
                             <div class="card-body text-right">
                                 <h5 class="card-title card-subtitle fw-semibold">Uzzal Hasda</h5>
@@ -538,7 +589,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="flip-left" data-aos-duration="3000">
                         <div class="card h-100 shadow-sm">
                             <div class="card-body text-right">
                                 <h5 class="card-title card-subtitle fw-semibold">Md. Nazmul Haqu</h5>
@@ -548,7 +599,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-duration="3000">
                         <div class="card h-100 shadow-sm">
                             <div class="card-body text-right">
                                 <h5 class="card-title card-subtitle fw-semibold">Palash Chandra Mohant</h5>
@@ -558,7 +609,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-duration="3000">
                         <div class="card h-100 shadow-sm">
                             <div class="card-body text-right">
                                 <h5 class="card-title card-subtitle fw-semibold">Md. Golam Kafi Mondal</h5>
@@ -569,7 +620,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="flip-left" data-aos-duration="3000">
                         <div class="card h-100 shadow-sm">
                             <div class="card-body text-right">
                                 <h5 class="card-title card-subtitle fw-semibold">Ranjit Kumar Roy</h5>
@@ -580,7 +631,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-duration="3000">
                         <div class="card h-100 shadow-sm">
                             <div class="card-body text-right">
                                 <h5 class="card-title card-subtitle fw-semibold">Md. Nasir Uddin Sarker</h5>
@@ -597,12 +648,14 @@
             </div>
         </section>
         <!-- ==================== TEACHEARS SECTION END ==================== -->
+
+
         <!-- ==================== BASIC INFO SECTION ==================== -->
         <section id="overview" class="py-5 bg-light">
             <div class="container">
                 <h2 class="section-title text-center mb-4 card-subtitle fw-bold">Basic Info</h2>
                 <div class="row g-3">
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4" data-aos="zoom-in-right" data-aos-duration="2000">
                         <div class="card h-100 shadow-sm">
                             <div class="card-body">
                                 <h6 class="card-subtitle mb-1 fw-bold fs-5">Institute's Name</h6>
@@ -610,7 +663,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4" data-aos="zoom-in-down" data-aos-duration="2000">
                         <div class="card h-100 shadow-sm">
                             <div class="card-body">
                                 <h6 class="card-subtitle mb-1 fw-bold fs-5">Alternative Name</h6>
@@ -618,7 +671,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4" data-aos="zoom-in-left" data-aos-duration="2000">
                         <div class="card h-100 shadow-sm">
                             <div class="card-body">
                                 <h6 class="card-subtitle mb-1 fw-bold fs-5">EIIN</h6>
@@ -627,7 +680,7 @@
                         </div>
                     </div>
                     <!-- Repeat similar cards for other fields -->
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4" data-aos="zoom-in-right" data-aos-duration="2000">
                         <div class="card h-100 shadow-sm">
                             <div class="card-body">
                                 <h6 class="card-subtitle mb-1 fw-bold fs-5">Board</h6>
@@ -637,7 +690,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4" data-aos="zoom-in-down" data-aos-duration="2000">
                         <div class="card h-100 shadow-sm">
                             <div class="card-body">
                                 <h6 class="card-subtitle mb-1 fw-bold fs-5">Disciplines</h6>
@@ -645,7 +698,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4" data-aos="zoom-in-left" data-aos-duration="2000">
                         <div class="card h-100 shadow-sm">
                             <div class="card-body">
                                 <h6 class="card-subtitle mb-1 fw-bold fs-5">Coeducation</h6>
@@ -653,7 +706,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4" data-aos="zoom-in-right" data-aos-duration="2000">
                         <div class="card h-100 shadow-sm">
                             <div class="card-body">
                                 <h6 class="card-subtitle mb-1 fw-bold fs-5">Shift</h6>
@@ -661,7 +714,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4" data-aos="zoom-in-down" data-aos-duration="2000">
                         <div class="card h-100 shadow-sm">
                             <div class="card-body">
                                 <h6 class="card-subtitle mb-1 fw-bold fs-5">Management</h6>
@@ -669,7 +722,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4" data-aos="zoom-in-left" data-aos-duration="2000">
                         <div class="card h-100 shadow-sm">
                             <div class="card-body">
                                 <h6 class="card-subtitle mb-1 fw-bold fs-5">Region</h6>
@@ -677,7 +730,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4" data-aos="zoom-in-right" data-aos-duration="2000">
                         <div class="card h-100 shadow-sm">
                             <div class="card-body">
                                 <h6 class="card-subtitle mb-1 fw-bold fs-5">Location</h6>
@@ -689,20 +742,21 @@
                 </div>
             </div>
         </section>
-
         <!-- ==================== BASIC INFO SECTION END ==================== -->
+
+
         <!-- ==================== CURRICULUM SECTION ==================== -->
         <section class="container-fluid py-5">
             <div class="container">
                 <div class="row justify-content-center mb-4">
                     <div class="col-lg-8 text-center">
-                        <h2 class="fw-bold">Curriculum of Our School</h2>
+                        <h2 class="fw-bold" data-aos="zoom-in" data-aos-duration="1500">Curriculum of Our School</h2>
                         <p class="text-muted">Our well-structured curriculum is designed to nurture academic excellence,
                             creativity, and personal growth in every student.</p>
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="row" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000">
                     <div class="col-12">
                         <!-- Nav Tabs -->
                         <div class="nav nav-tabs justify-content-center mb-3" id="nav-tab" role="tablist">
@@ -721,7 +775,7 @@
                             <!-- Primary -->
                             <div class="tab-pane fade show active" id="Primary" role="tabpanel">
                                 <div class="row shadow-lg p-4 rounded">
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-6" data-aos="fade-down-right" data-aos-duration="2000">
                                         <ul class="lis">
                                             <li>Interactive learning through play and activities</li>
                                             <li>Focus on reading, writing, and numeracy</li>
@@ -730,7 +784,7 @@
                                             <li>Building moral and social values</li>
                                         </ul>
                                     </div>
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-6" data-aos="fade-up-left" data-aos-duration="2000">
                                         <img src="asset/c1.png" alt="Primary curriculum"
                                             class="img-fluid curriculum-img">
                                     </div>
@@ -740,7 +794,7 @@
                             <!-- Secondary -->
                             <div class="tab-pane fade" id="Secondary" role="tabpanel">
                                 <div class="row shadow-lg p-4 rounded">
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-6" data-aos="fade-down-right" data-aos-duration="2000">
                                         <ul class="lis">
                                             <li>Comprehensive subject-based learning</li>
                                             <li>Science and ICT labs for practical exposure</li>
@@ -749,7 +803,7 @@
                                             <li>Career guidance & exam preparation</li>
                                         </ul>
                                     </div>
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-6" data-aos="fade-up-left" data-aos-duration="2000">
                                         <img src="asset/c2.png" alt="Secondary curriculum"
                                             class="img-fluid curriculum-img">
                                     </div>
@@ -759,7 +813,7 @@
                             <!-- Higher Secondary -->
                             <div class="tab-pane fade" id="higherSecondary" role="tabpanel">
                                 <div class="row shadow-lg p-4 rounded">
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-6" data-aos="fade-down-right" data-aos-duration="2000">
                                         <ul class="lis">
                                             <li>Specialized subjects for future careers</li>
                                             <li>Preparation for university entrance exams</li>
@@ -768,7 +822,7 @@
                                             <li>Focus on academic excellence</li>
                                         </ul>
                                     </div>
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-6" data-aos="fade-up-left" data-aos-duration="2000">
                                         <img src="asset/c3.png" alt="Secondary curriculum"
                                             class="img-fluid curriculum-img">
                                     </div>
@@ -778,7 +832,7 @@
                             <!-- Co-Curricular -->
                             <div class="tab-pane fade" id="co-Curricular" role="tabpanel">
                                 <div class="row shadow-lg p-4 rounded">
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-6" data-aos="fade-down-right" data-aos-duration="3000">
                                         <ul class="lis">
                                             <li>Sports and athletics programs</li>
                                             <li>Art, music, and cultural activities</li>
@@ -787,7 +841,7 @@
                                             <li>Leadership and personality development</li>
                                         </ul>
                                     </div>
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-6" data-aos="fade-up-left" data-aos-duration="3000">
                                         <img src="asset/c4.png" alt="Secondary curriculum"
                                             class="img-fluid curriculum-img">
                                     </div>
@@ -800,12 +854,15 @@
         </section>
         <!-- ==================== CURRICULUM SECTION END ==================== -->
 
+
         <!-- ==================== FAQ SECTION ==================== -->
-        <section class="container-fluid py-5 bg-secondary-subtle">
+        <section class="container-fluid py-5 bg-secondary-subtle" data-aos="fade-up"
+            data-aos-anchor-placement="top-center" data-aos-duration="1500">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
-                        <h2 class="text-center fw-bold mb-4">Baratipur Model High School <br>FAQs</h2>
+                        <h2 class="text-center fw-bold mb-4" data-aos="zoom-out-up" data-aos-duration="1500">Baratipur
+                            Model High School <br>FAQs</h2>
                         <p class="text-center text-muted mb-5">
                             আমাদের সম্পর্কে অভিভাবক ও শিক্ষার্থীদের কিছু সাধারণ প্রশ্ন ও উত্তর নিচে দেওয়া হলো।
                         </p>
@@ -933,6 +990,7 @@
         </section>
         <!-- ==================== FAQ SECTION END ==================== -->
     </main>
+
     <!-- ==================== FOOTER SECTRION END ==================== -->
     <footer class="pt-5 pb-3" style="background-color: #1f293780;">
         <div class="container">
@@ -984,9 +1042,14 @@
     </footer>
     <!-- ==================== FOOTER SECTRION END ==================== -->
 
+
     <!-- Bootstrap Icons CDN (Add in <head> if not already) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
