@@ -47,7 +47,7 @@ Leverage Bootstrap’s JavaScript plugins (carousel, offcanvas, collapse) effect
 👉 <a href="https://devsohel32.github.io/bootstrap-learning-project/">View Live Project<a/>
 
 👉 <a href="https://github.com/DevSohel32/bootstrap-learning-project.git"> GitHub Repository
-<a/> <br>
+<a/> <br><br><br>
 🛠️ Future Improvements
    <li> Backend integration (student portal, results, etc.)</li>
    <li>Admin panel for content management</li>
